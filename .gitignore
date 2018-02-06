@@ -28,7 +28,6 @@ docs/_build/
 *.egg
 *.egg-info
 dist
-build
 eggs
 parts
 var
@@ -61,3 +60,4 @@ MANIFEST
 
 # Virtual Environments
 .venv
+

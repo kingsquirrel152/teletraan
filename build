@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -eu
+docker build --tag distil/$(basename $PWD) . 
+docker run --interactive --tty --rm --volume $PWD/deploy-service:/$(basename $PWD) --workdir /$(basename $PWD) distil/$(basename $PWD) mvn clean package -DskipTests
+
