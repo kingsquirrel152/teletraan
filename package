@@ -3,4 +3,6 @@ set -eu
 commit=$(git rev-parse --short HEAD)
 dirty=$(git diff --shortstat 2>/dev/null | tail -n1)
 version="$commit"
-mv deploy-service/teletraanservice/target/teletraan-service-0.1-SNAPSHOT-bin.tar.gz ./teletraan-$version.tar.gz
+cp deploy-service/teletraanservice/target/teletraan-service-0.1-SNAPSHOT-bin.tar.gz ./deploy-service-$version.tar.gz
+
+tar -czf deploy-board-$version.tar.gz deploy-board 
