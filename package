@@ -6,3 +6,4 @@ version="$commit"
 cp deploy-service/teletraanservice/target/teletraan-service-0.1-SNAPSHOT-bin.tar.gz ./deploy-service.tar.gz
 
 tar -czf deploy-board.tar.gz deploy-board 
+tar -czf deploy-agent.tar.gz deploy-agent 
